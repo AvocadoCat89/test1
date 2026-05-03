@@ -1,0 +1,62 @@
+{
+    "activeFile": "bestshot.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "WA_Room_Builder.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "bestshot.tmx": {
+            "scale": 0.25,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 4488,
+                "y": 2604
+            }
+        },
+        "bestshot.tmx#WA_Room_Builder": {
+            "scaleInDock": 1
+        },
+        "room build.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tech tile.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "безымянный.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 792,
+                "y": 1146
+            }
+        }
+    },
+    "last.imagePath": "C:/Users/hoco1/OneDrive/Desktop/tilesets",
+    "map.height": 500,
+    "map.lastUsedFormat": "tmx",
+    "map.width": 800,
+    "openFiles": [
+        "WA_Room_Builder.tsx",
+        "bestshot.tmx",
+        "tech tile.tsx"
+    ],
+    "project": "test1.tiled-project",
+    "property.type": "bool",
+    "recentFiles": [
+        "WA_Room_Builder.tsx",
+        "tech tile.tsx",
+        "bestshot.tmx",
+        "безымянный.tmx",
+        "room build.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx"
+}
