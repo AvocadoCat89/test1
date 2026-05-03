@@ -1,0 +1,7 @@
+services:
+  wa-map:
+    build: .
+    container_name: wa-map-server
+    ports:
+      - "8080:80"
+    restart: always
