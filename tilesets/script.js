@@ -1,39 +1,23 @@
+console.log("ПРОВЕРКА: Скрипт загружен!");
 
 WA.onInit().then(() => {
-    console.log("Скрипт библиотеки загружен");
+    console.log("API готово!");
 
-    
-    bookZones.forEach((zone) => {
-        let popup; 
-
-       
-        WA.room.onEnterZone(zone.name, () => {
-           
-            const bookText = zone.properties.text || "Эта книга пуста...";
-
-          
-            WA.ui.displayActionMessage({
-                message: "Нажмите Пробел, чтобы прочитать",
-                callback: () => {
-                    // Если нажали пробел — открываем красивое окно
-                    popup = WA.ui.openPopup(zone.name, bookText, [
-                        {
-                            label: "Закрыть",
-                            className: "primary",
-                            callback: (p) => {
-                                p.close();
-                            }
-                        }
-                    ]);
-                }
-            });
-        });
-
-
-        WA.room.onLeaveZone(zone.name, () => {
-            WA.ui.hideActionMessage();
-            if (popup) {
-                popup.close();
+    // Замени 'book_id_4' на точное имя твоего объекта в Tiled
+    WA.room.onEnterZone('book_id_4', () => {
+        console.log("КТО-ТО ПРИШЕЛ К КНИГЕ!");
+        WA.chat.sendChatMessage("Вы подошли к книге. Нажмите пробел!", "Система");
+        
+        WA.ui.displayActionMessage({
+            message: "Нажмите Пробел",
+            callback: () => {
+                WA.ui.openPopup("target", "Тут будет текст про Базальт СПО и Git", [
+                    {
+                        label: "Понял",
+                        className: "primary",
+                        callback: (p) => p.close()
+                    }
+                ]);
             }
         });
     });
